@@ -4,9 +4,9 @@ using WordUnscrambler.Data;
 
 namespace WordUnscrambler.Workers
 {
-    internal class WordMatcher
+    public class WordMatcher
     {
-        internal List<MatchedWord> Match(string[] scrambledWords, string[] wordList)
+        public List<MatchedWord> Match(string[] scrambledWords, string[] wordList)
         {
             var matchedWords = new List<MatchedWord>();
 
