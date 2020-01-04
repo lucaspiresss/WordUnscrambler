@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace WordUnscrambler.Workers
 {
@@ -6,7 +7,16 @@ namespace WordUnscrambler.Workers
     {
         internal string[] Read(string fileName)
         {
-            string[] fileContent = null;
+            string[] fileContent;
+
+            try
+            {
+                fileContent = File.ReadAllLines(fileName);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
 
             return fileContent;
         }
