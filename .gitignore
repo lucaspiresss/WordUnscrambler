@@ -1,0 +1,14 @@
+# Executables
+*.exe
+
+# Mac OS
+.DS_Store
+
+# Temporary object files directory
+*/obj/
+
+# Visual Studio
+.vs/
+
+# Vistual Studio files
+*.pdb
